@@ -9,7 +9,7 @@ namespace IrpfApp.BLL
         private String nome;
         private String cpf;
         private int idade;
-        //private int nroDep;
+        private int nroDep;
         private double contrPrev;
         private double totRend;
         private CalculoIrpf impostoDevido;
@@ -68,22 +68,12 @@ namespace IrpfApp.BLL
         set { idade = value;  }
     }
 
-    //public void setIdade(int novaIdade)
-    //    {
-    //        idade = novaIdade;
-    //    }
+    public String Nome { get; set; }
 
-        public String getNome()
-    {
-        return nome;
-    }
 
     public int NroDep { get; set; }
         
-    public double getTotRend()
-    {
-        return totRend;
-    }
+    public double TotRend { get; }
 
     public double getImpostoDevido()
     {
